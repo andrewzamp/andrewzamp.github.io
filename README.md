@@ -1,6 +1,6 @@
-# Andrea Zampetti - Academic Portfolio
+# Academic Portfolio Template
 
-Modern, responsive academic portfolio website showcasing research, publications, and expertise in software engineering.
+Modern, responsive academic portfolio website template showcasing research, publications, and expertise in software engineering.
 
 ## ✨ Features
 
