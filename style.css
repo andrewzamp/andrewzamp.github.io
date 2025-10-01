@@ -1,0 +1,152 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 0 20px 0;
+    border-bottom: 2px solid #e9ecef;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+nav a {
+    color: #495057;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Sections */
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Research Items */
+.research-item {
+    margin-bottom: 30px;
+}
+
+.research-item h3 {
+    font-size: 1.3em;
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+.research-item p {
+    color: #6c757d;
+}
+
+/* Publications */
+.publication {
+    margin-bottom: 25px;
+    padding-left: 20px;
+    border-left: 3px solid #007bff;
+}
+
+.publication p {
+    margin-bottom: 5px;
+}
+
+.publication strong {
+    color: #2c3e50;
+}
+
+.publication em {
+    color: #6c757d;
+}
+
+/* Contact */
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+#contact p {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 0 20px 0;
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 30px 0;
+    }
+}
