@@ -1,4 +1,4 @@
-# andrewzamp.github.io
+# Andrea Zampetti
 
 A minimal and clean research profile website template.
 
