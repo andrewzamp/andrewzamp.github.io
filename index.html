@@ -13,12 +13,19 @@
 <body>
     <!-- Floating Navigation -->
     <nav class="floating-nav">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#research" class="nav-link">Research</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#publications" class="nav-link">Publications</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#contact" class="nav-link">Contact</a>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links-container">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#research" class="nav-link">Research</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#publications" class="nav-link">Publications</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
     </nav>
 
     <!-- Hero Section -->
@@ -245,6 +252,30 @@
     </footer>
 
     <script>
+        // Mobile navigation toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const floatingNav = document.querySelector('.floating-nav');
+        
+        if (navToggle && floatingNav) {
+            navToggle.addEventListener('click', function() {
+                const isCurrentlyExpanded = this.getAttribute('aria-expanded') === 'true';
+                const willBeExpanded = !isCurrentlyExpanded;
+                
+                this.classList.toggle('active');
+                floatingNav.classList.toggle('menu-open');
+                this.setAttribute('aria-expanded', willBeExpanded.toString());
+            });
+
+            // Close mobile menu when clicking on a nav link
+            document.querySelectorAll('.floating-nav .nav-link').forEach(link => {
+                link.addEventListener('click', function() {
+                    navToggle.classList.remove('active');
+                    floatingNav.classList.remove('menu-open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+
         // Smooth scroll with offset for floating nav
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
