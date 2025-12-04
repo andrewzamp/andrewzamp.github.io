@@ -1,10 +1,5 @@
 # Andrea Zampetti's website
 
-## 🚀 Built with:
-
-- HTML5
-- CSS3 (with modern features like backdrop-filter, gradients, and animations)
-- Vanilla JavaScript
-- Google Fonts (Inter)
-
+- Access it <a href="https://andrewzamp.github.io/">here</a>.
+  
 Created with the assistance of GitHub Copilot.
