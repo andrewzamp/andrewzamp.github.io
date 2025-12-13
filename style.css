@@ -270,6 +270,36 @@ body {
     }
 }
 
+/* CV Download Button */
+.cv-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid rgba(61, 125, 61, 0.3);
+    border-radius: 30px;
+    color: #2d5016;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    animation: fadeInUp 0.8s ease-out 0.8s both;
+}
+
+.cv-download-btn:hover {
+    background: white;
+    border-color: #3d7d3d;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.cv-download-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
 /* Main Content */
 .content {
     max-width: 1200px;
@@ -664,6 +694,34 @@ body {
     opacity: 0.9;
 }
 
+.footer-cv-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 28px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.footer-cv-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer-cv-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
 /* Mobile Navigation Toggle Button */
 .nav-toggle {
     display: none;
@@ -715,6 +773,11 @@ body {
     .hero-links {
         flex-direction: column;
         gap: 12px;
+    }
+
+    .cv-download-btn {
+        padding: 12px 24px;
+        font-size: 0.9rem;
     }
 
     .floating-nav {
