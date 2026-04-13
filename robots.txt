@@ -5,4 +5,3 @@ Allow: /
 Disallow: /README.md
 
 Sitemap: https://andrewzamp.github.io/sitemap.xml
-Host: andrewzamp.github.io
