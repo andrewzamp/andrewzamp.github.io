@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Keep crawl budget focused on meaningful public pages.
+Disallow: /README.md
+
+Sitemap: https://andrewzamp.github.io/sitemap.xml
+Host: andrewzamp.github.io
